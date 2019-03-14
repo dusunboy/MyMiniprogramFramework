@@ -1,0 +1,15 @@
+<!--nav.wxml-->
+<navigation-bar show-back="{{showBack}}" bindback="onnavback" enable="{{enable}}" show-loading="{{loading}}" title="{{title}}"  title-style="{{titleStyle}}" bg-style="{{bgStyle}}" delta="{{delta}}" text-style='{{textStyle}}'>
+  <!-- <view style="color:white">
+    测试
+  </view> -->
+</navigation-bar>
+
+<view class="button-area">
+    <button bindtap="setTitle">点击设置title</button>
+    <button bindtap="setNavBack">点击设置enable属性</button>
+    <button bindtap="setLoading">点击设置show-loading属性</button>
+    <button bindtap="setBgStyle">点击设置bg-style属性</button>
+    <button bindtap="setTitleStyle">点击设置title-style属性</button>
+     <button bindtap="setshowBack">点击设置show-back属性</button>
+</view>

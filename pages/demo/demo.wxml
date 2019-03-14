@@ -1,0 +1,7 @@
+<!--pages/demo/demo.wxml-->
+<navigation-bar  show-back="{{isShowBack}}" bindback="onBack" enable="{{isNavEnable}}" show-loading="{{isNavLoading}}" title="{{navTitle}}"  title-style="{{navTitleStyle}}" bg-style="{{navBgStyle}}" text-style='{{navTextStyle}}'></navigation-bar>
+
+<view class="container flex-column">
+  <button bindtap="testRequest" class="ml100">测试请求</button>
+  <button bindtap="testDownload" >测试下载</button>
+</view>

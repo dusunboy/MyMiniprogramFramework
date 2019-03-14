@@ -1,0 +1,16 @@
+<navigation-bar  show-back="{{true}}" bindback="onBack" enable="{{true}}" show-loading="{{loading}}" title="{{title}}"  title-style="{{titleStyle}}" bg-style="{{bgStyle}}" delta="{{delta}}" text-style='{{textStyle}}'></navigation-bar>
+<view class="container">
+  <slide-view width="750" height="110" slide-width="500" isCloseSlide="{{isCloseSlide}}">
+    <view slot="left" class="l">
+      <image src="./image/file_transfer.jpg" class="img"></image>
+      <view class='text'>
+        <view class='title'>文件传输助手</view>
+        <view class='time'>7:00 PM</view>
+      </view>
+    </view>
+    <view slot="right" class="r">
+      <view class='read' bindtap="closeSlide">标为已读</view>
+      <view class='delete'>删除</view>
+    </view>
+  </slide-view>
+</view>

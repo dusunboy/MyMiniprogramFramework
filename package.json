@@ -1,0 +1,18 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "miniprogram-navigation-bar-dusunboy": "^1.0.0",
+    "miniprogram-recycle-view": "^0.1.0",
+    "miniprogram-slide-view-dusunboy": "^1.0.0",
+    "miniprogram-sm-crypto": "0.0.6"
+  }
+}

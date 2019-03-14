@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "slide-view": "miniprogram-slide-view-dusunboy",
+    "navigation-bar": "miniprogram-navigation-bar-dusunboy"
+  }
+}

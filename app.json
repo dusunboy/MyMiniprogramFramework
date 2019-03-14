@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/test-module/sm-crypto/sm-crypto",
+    "pages/test-module/slide-view/slide-view",
+    "pages/test-module/recycle-view/recycle-view",
+    "pages/test-module/navigation-bar/navigation-bar",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  }
+}
