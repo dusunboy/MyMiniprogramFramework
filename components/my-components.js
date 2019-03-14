@@ -2,6 +2,7 @@
 Component({
 
   options: {
+    // 支持多slots
     multipleSlots: true
   },
 
