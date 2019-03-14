@@ -1,12 +1,12 @@
 {
   "name": "my-miniprogram-framework",
   "version": "1.0.0",
-  "description": "",
+  "description": "我的小程序轻量级框架",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "dusunboy",
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
