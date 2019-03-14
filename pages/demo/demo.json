@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "navigation-bar": "miniprogram-navigation-bar-dusunboy"
+    "navigation-bar": "miniprogram-navigation-bar-dusunboy",
+    "my-components": "../../components/my-components"
   }
 }

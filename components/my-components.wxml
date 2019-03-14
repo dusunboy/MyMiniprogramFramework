@@ -1,0 +1,4 @@
+<!-- components/my-components.wxml -->
+<slot name="before"></slot>
+<text class="txt">components/my-components.wxml</text>
+<slot name="after"></slot>
