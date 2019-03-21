@@ -30,6 +30,11 @@
 └── README.md                        // 项目说明
 ```
 
+## 安装
+
+* [使用脚手架生成项目**fw-cli**](https://github.com/dusunboy/fw-cli)
+* 可下载项目直接使用
+
 ## 使用示例
 
 ``` JS
