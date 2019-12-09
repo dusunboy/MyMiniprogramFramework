@@ -7,12 +7,12 @@
     "pages/test-module/recycle-view/recycle-view",
     "pages/test-module/navigation-bar/navigation-bar",
     "pages/logs/logs"
-    
   ],
   "window": {
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "white",
     "navigationStyle": "custom"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
