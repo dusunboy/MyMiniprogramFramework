@@ -1,3 +1,5 @@
 <!--pages/sm-crypto/sm-crypto.wxml-->
-<navigation-bar  show-back="{{true}}" bindback="onBack" enable="{{true}}" show-loading="{{loading}}" title="{{title}}"  title-style="{{titleStyle}}" bg-style="{{bgStyle}}" delta="{{delta}}" text-style='{{textStyle}}'></navigation-bar>
+<c-navigation-bar loading="{{isNavLoading}}" show="{{isShowNav}}" animated="{{isNavAnimated}}" 
+  color="{{navTitleColor}}" background="{{navBgStyle}}" title="{{navTitle}}" back="{{isShowNavBack}}" mode="{{navMode}}">
+</c-navigation-bar>
 <text>pages/sm-crypto/sm-crypto.wxml</text>

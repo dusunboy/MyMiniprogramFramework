@@ -10,7 +10,6 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "miniprogram-navigation-bar-dusunboy": "^1.0.0",
     "miniprogram-recycle-view": "^0.1.0",
     "miniprogram-slide-view-dusunboy": "^1.0.0",
     "miniprogram-sm-crypto": "0.0.6"

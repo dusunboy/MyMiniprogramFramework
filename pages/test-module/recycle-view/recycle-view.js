@@ -10,13 +10,16 @@ const systemInfo = wx.getSystemInfoSync()
 // 提交wx.createRecycleContext能力
 const createRecycleContext = require('miniprogram-recycle-view')
 
-Page({
+import BasePage from '../../../basePage'
+
+new BasePage({
 
   /**
    * 页面的初始数据
    */
   data: {
     // placeholderImage: "data:image/svg+xml,%3Csvg height='140rpx' test='132rpx' width='100%25' xmlns='http://www.w3.org/2000/svg'%3E %3Crect width='50%25' x='40' height='20%25' style='fill:rgb(204,204,204);' /%3E %3C/svg%3E"
+    navTitle: 'RecycleView组件'    
   },
 
   /**
@@ -100,6 +103,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+
+  },
+  onnavback(e) {
 
   },
 

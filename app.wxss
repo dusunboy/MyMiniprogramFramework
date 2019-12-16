@@ -3,11 +3,6 @@
 /* margin padding 简写样式 */
 @import './styles/dimen.wxss';
 
-.container {
-  height: 100%;
-  padding-top: 61px;
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;

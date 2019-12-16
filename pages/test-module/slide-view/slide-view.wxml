@@ -1,4 +1,6 @@
-<navigation-bar  show-back="{{true}}" bindback="onBack" enable="{{true}}" show-loading="{{loading}}" title="{{title}}"  title-style="{{titleStyle}}" bg-style="{{bgStyle}}" delta="{{delta}}" text-style='{{textStyle}}'></navigation-bar>
+<c-navigation-bar loading="{{isNavLoading}}" show="{{isShowNav}}" animated="{{isNavAnimated}}" 
+  color="{{navTitleColor}}" background="{{navBgStyle}}" title="{{navTitle}}" back="{{isShowNavBack}}" mode="{{navMode}}">
+</c-navigation-bar>
 <view class="container">
   <slide-view width="750" height="110" slide-width="500" isCloseSlide="{{isCloseSlide}}">
     <view slot="left" class="l">

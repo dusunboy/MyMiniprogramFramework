@@ -6,7 +6,8 @@ new BasePage({
    * 页面的初始数据
    */
   data: {
-    navTitle: 'demo'
+    navTitle: '测试',
+    // navMode: 'white',
   },
 
   /**
@@ -73,5 +74,18 @@ new BasePage({
       console.log('已经下载的数据长度', res.totalBytesWritten)
       console.log('预期需要下载的数据总长度', res.totalBytesExpectedToWrite)
     })
-  }
+  },
+  testNavigationBar() {
+    this.weChat.api('navigateTo', { url: '../test-module/navigation-bar/navigation-bar' })
+  },
+  testRecycleView() {
+    this.weChat.api('navigateTo', { url: '../test-module/recycle-view/recycle-view' })
+  },
+  testSlideView() {
+    this.weChat.api('navigateTo', { url: '../test-module/slide-view/slide-view' })
+  },
+  testSmCrypto() {
+    this.weChat.api('navigateTo', { url: '../test-module/sm-crypto/sm-crypto' })
+  },
+
 })

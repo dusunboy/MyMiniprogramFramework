@@ -14,5 +14,8 @@
     "navigationBarTextStyle": "white",
     "navigationStyle": "custom"
   },
+  "usingComponents": {
+    "c-navigation-bar": "/components/navigation-bar/navigation-bar"
+  },
   "sitemapLocation": "sitemap.json"
 }

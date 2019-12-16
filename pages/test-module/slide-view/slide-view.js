@@ -1,11 +1,15 @@
 // pages/slide-view/slide-view.js
-Page({
+import BasePage from '../../../basePage'
+
+new BasePage({
 
   /**
    * 页面的初始数据
    */
   data: {
     isCloseSlide: false,
+    navTitle: 'SlideView组件',
+    
   },
 
   /**

@@ -2,13 +2,15 @@
 
 import { sm2 } from 'miniprogram-sm-crypto';
 
-Page({
+import BasePage from '../../../basePage'
+
+new BasePage({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    navTitle: 'sm-crypto加密解密',
   },
 
   /**

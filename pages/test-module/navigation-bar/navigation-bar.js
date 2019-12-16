@@ -1,18 +1,13 @@
 // pages/navigation-bar/navigation-bar.js
-Page({
+import BasePage from '../../../basePage'
+
+new BasePage({
 
   /**
    * 页面的初始数据
    */
   data: {
-    enable: true,
-    loading: false,
-    title: '',
-    titleStyle: '',
-    bgStyle: 'position: fixed',
-    delta: 2,
-    textStyle: 'white',
-    showBack: true
+    navTitle: '导航栏',
   },
 
   /**
@@ -71,67 +66,64 @@ Page({
 
   },
 
-  onnavback(e) {
-    console.log('navback', e)
-  },
   setTitle() {
-    if (this.data.title !== '微信') {
+    if (this.data.navTitle !== '导航栏') {
       this.setData({
-        title: '微信'
+        navTitle: '导航栏'
       })
     } else {
       this.setData({
-        title: 'WeChat'
+        navTitle: 'WeChat'
       })
     }
   },
   setLoading() {
-    if (this.data.loading === false) {
+    if (this.data.isNavLoading !== false) {
       this.setData({
-        loading: true
+        isNavLoading: false
       })
     } else {
       this.setData({
-        loading: false
+        isNavLoading: true
       })
     }
   },
-  setNavBack() {
-    if (this.data.enable === false) {
+  setShowNav() {
+    if (this.data.isShowNav === false) {
       this.setData({
-        enable: true
+        isShowNav: true
       })
     } else {
       this.setData({
-        enable: false
+        isShowNav: false
       })
     }
   },
   setTitleStyle() {
-    if (this.data.titleStyle !== 'color: #333300;') {
+    if (this.data.navTitleColor !== 'white;') {
       this.setData({
-        titleStyle: 'color: #333300;'
+        navTitleColor: 'white;'
       })
     } else {
       this.setData({
-        titleStyle: 'color: #fff;'
+        navTitleColor: '#333300;'
       })
     }
   },
   setBgStyle() {
-    if (this.data.bgStyle !== 'background-color: #60A718;') {
+    if (this.data.navBgStyle !== 'linear-gradient(45deg, #FFB6C1, #FFB6C1);') {
       this.setData({
-        bgStyle: 'background-color: #60A718;'
+        navBgStyle: 'linear-gradient(45deg, #FFB6C1, #FFB6C1);'
       })
     } else {
       this.setData({
-        bgStyle: 'background-color: #000;'
+        navBgStyle: 'linear-gradient(45deg, #FF00FF, #FAFAD2);'
       })
     }
   },
   setshowBack() {
     this.setData({
-      showBack: !this.data.showBack
+      isShowNavBack: !this.data.isShowNavBack
     })
   }
 })

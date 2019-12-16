@@ -23,21 +23,36 @@ class BasePage {
    * 注入初始化數據
    */
   initData() {
-    this.obj.data = {
-      //是否显示导航栏的返回按钮
-      isShowBack: true,
-      //导航栏是否加载中
-      isNavLoading: false,
-      //返回上级页面返回按钮是否生效
-      isNavEnable: true,
-      //导航栏标题名称
-      navTitle: '',
-      //可设定导航栏标题样式
-      navTitleStyle: 'background-color: #ff797b;',
-      //可设定导航栏样式
-      navBgStyle: 'background-color: #ff797b;',
-      //设置返回按钮颜色， 仅支持 white 和 black
-      navTextStyle: 'white'
+    //是否显示导航栏
+    if (typeof this.obj.data.isShowNav === 'undefined') {
+      this.obj.data.isShowNav = true
+    }
+    //导航栏是否加载中
+    if (typeof this.obj.data.isNavLoading === 'undefined') {
+      this.obj.data.isNavLoading = false
+    }
+     //导航栏标题名称
+    if (typeof this.obj.data.navTitle === 'undefined') {
+      this.obj.data.navTitle = ''
+    }
+    // 导航栏标题颜色
+    if (typeof this.obj.data.navTitleColor === 'undefined') {
+      this.obj.data.navTitleColor = 'black'
+    }
+    // 导航栏背景颜色
+    if (typeof this.obj.data.navBgStyle === 'undefined') {
+      this.obj.data.navBgStyle = 'linear-gradient(45deg, #fff, #fff)'
+    }
+    // 导航栏是否开启动画
+    if (typeof this.obj.data.isNavAnimated === 'undefined') {
+      this.obj.data.isNavAnimated = false
+    }
+    // 导航栏后退按钮是否显示
+    if (typeof this.obj.data.isShowNavBack === 'undefined') {
+      this.obj.data.isShowNavBack = true
+    }
+    if (typeof this.obj.data.navMode === 'undefined') {
+      this.obj.data.navMode = ''
     }
     this.obj.weChat = WeChat
     this.obj.request = Request
