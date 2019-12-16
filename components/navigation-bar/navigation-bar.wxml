@@ -17,7 +17,7 @@
         <view class="weui-loading" style="width:{{size.width}}rpx;height:{{size.height}}rpx;"></view>
       </view>
       <block wx:if="{{title}}">
-        <text>{{title}}</text>
+        <text style="font-size: 13px;">{{title}}</text>
       </block>
       <block wx:else>
         <slot name="center"></slot>
