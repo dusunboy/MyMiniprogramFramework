@@ -6,7 +6,7 @@
 * Promise化小程序接口
 * Promise化网络请求以及注入拦截器
 * 支持引入NPM包
-* margin样式简写
+* margin,padding样式简写
 * 封装几种常用组件
 
 ## 目录介绍
@@ -17,15 +17,17 @@
 ├── pages                            // 页面目录
 ├── styles                           // 样式目录
 │   └── dimen.wxss                   // 尺寸样式
-├── utils                            // 工具目录
+├── requests                         // 请求目录
 │   ├── api.js                       // 接口地址APi类
 │   ├── interceptor.js               // 请求拦截类
-│   ├── request.js                   // 网络请求类
+│   └── request.js                   // 网络请求类
+├── utils                            // 工具目录
 │   ├── util.js                      // 工具类
 │   └── weChat.js                    // Promise化小程序接口
 ├── app.js                           // app入口
 ├── app.wxss                         // 全局样式
 ├── basePage.js                      // Page的父类
+├── config.js                        // 配置文件
 ├── package.json                     // npm依赖配置
 ├── project.config.json              // 项目配置文件
 └── README.md                        // 项目说明
