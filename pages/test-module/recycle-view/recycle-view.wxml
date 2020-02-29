@@ -15,7 +15,11 @@
       <template is="recycleItem" data="{{item: item, recycleList: recycleListItemSize}}"></template>
     </view>
     <template is="recycleItem" data="{{item: item, recycleList: recycleList}}"></template>
-    <view slot="after" style="height:200px;">after height:200px view</view>
+    <!-- <view slot="after" style="height:200px;"> -->
+    <view slot="after">
+      <view class="">after height:200px view</view>
+      <load-more />
+    </view>
   </recycle-view>
   <template name="recycleItem">
     <recycle-item style="width:50%;" wx:for="{{recycleList}}" wx:key="id">

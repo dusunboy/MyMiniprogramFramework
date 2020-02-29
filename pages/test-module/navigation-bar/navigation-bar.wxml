@@ -1,13 +1,10 @@
-<!--nav.wxml-->
-<c-navigation-bar loading="{{isNavLoading}}" show="{{isShowNav}}" animated="{{isNavAnimated}}" 
-  color="{{navTitleColor}}" background="{{navBgStyle}}" title="{{navTitle}}" back="{{isShowNavBack}}" mode="{{navMode}}">
-</c-navigation-bar>
-
+<!-- nav.wxml -->
+<c-navigation-bar loading="{{isNavLoading}}" show="{{isShowNav}}" animated="{{isNavAnimated}}" color="{{navTitleColor}}" background="{{navBgStyle}}" title="{{navTitle}}" back="{{isShowNavBack}}" mode="{{navMode}}"></c-navigation-bar>
 <view class="button-area">
-    <button bindtap="setTitle">点击设置title</button>
-    <button bindtap="setShowNav">点击是否显示导航栏</button>
-    <button bindtap="setLoading">点击设置show-loading属性</button>
-    <button bindtap="setBgStyle">点击设置bg-style属性</button>
-    <button bindtap="setTitleStyle">点击设置title-style属性</button>
-     <button bindtap="setshowBack">点击设置show-back属性</button>
+  <button bindtap="setTitle">点击设置title</button>
+  <button bindtap="setShowNav">点击是否显示导航栏</button>
+  <button bindtap="setLoading">点击设置show-loading属性</button>
+  <button bindtap="setBgStyle">点击设置bg-style属性</button>
+  <button bindtap="setTitleStyle">点击设置title-style属性</button>
+  <button bindtap="setshowBack">点击设置show-back属性</button>
 </view>

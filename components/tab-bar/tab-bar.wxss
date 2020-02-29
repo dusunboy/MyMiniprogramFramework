@@ -1,0 +1,42 @@
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.tab-bar {
+	position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+	background-size: 100% 100%;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.tab-bar .item {
+	align-items: center;
+	padding-top: 25px !important;
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+	padding-bottom: 5px !important;
+
+}
+
+.tab-bar .selected {
+	background-size: 100% 100%;
+}
+
+.tab-bar .icon {
+	width: 36px;
+	height: 36px;
+}
+
+.tab-bar .txt {
+	margin-top: 3px !important;
+	font-size: 10px;
+}

@@ -39,14 +39,16 @@
 
 ``` JS
 // pages/demo/demo.js
-this.weChat.api('showLoading')
 const data = {
-  test: '1',
-  test1: '2'
-}
-//Get请求
+      test: '1',
+      test1: '2',
+      isShowLoading: true
+    }
 const promise = this.request
-  .get(this.api.API_TEST, data)
+  .get({
+    url: this.api.TEST,
+    data: data
+  })
   .then(res => {
     console.log(res)
   })
@@ -54,13 +56,17 @@ const promise = this.request
     console.log(error)
   })
   .finally(() => {
-    this.weChat.api('hideLoading')
+    console.log(promise)
   })
-console.log(promise)
 
 //下载请求
 const promise = this.request
-  .downloadFile(this.api.API_TEST_DOWNLOAD)
+  .downloadFile({
+    url: this.api.TEST_DOWNLOAD,
+    data: {
+      isShowLoading: true
+    }
+  })
   .then(res => {
     console.log(res)
   })
@@ -68,7 +74,7 @@ const promise = this.request
     console.log(error)
   })
   .finally(() => {
-    this.weChat.api('hideLoading')
+
   })
 promise.downloadTask.onProgressUpdate(res => {
   console.log('下载进度', res.progress)
@@ -86,7 +92,6 @@ const beforeRequest = obj => {
    * 是否终止请求
    */
   let isCancelRequest = false
-  // console.log(obj);
   return isCancelRequest
 }
 
@@ -95,7 +100,6 @@ const beforeRequest = obj => {
  * @param {*} obj
  */
 const response = obj => {
-  // console.log(obj);
   return obj.data
 }
 
@@ -104,7 +108,6 @@ const response = obj => {
  * @param {*} obj
  */
 const responseError = obj => {
-  // console.log(obj);
   return obj.data
 }
 

@@ -5,7 +5,6 @@ const app = getApp()
 let data = require('./data.js')
 let j = 1
 data = data.response.data
-const systemInfo = wx.getSystemInfoSync()
 
 // 提交wx.createRecycleContext能力
 const createRecycleContext = require('miniprogram-recycle-view')

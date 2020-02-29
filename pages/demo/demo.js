@@ -1,5 +1,8 @@
 // pages/demo/demo.js
 import BasePage from '../../basePage'
+import {
+  $Message
+} from '../../components/message/message'
 
 new BasePage({
   /**
@@ -17,7 +20,9 @@ new BasePage({
     console.log('demo onLoad')
     // 登陆接口
     this.weChat
-      .api('showLoading', {title: '测试'})
+      .api('showLoading', {
+        title: '测试'
+      })
       .then(res => {
         console.log('success:', res)
       })
@@ -28,6 +33,10 @@ new BasePage({
         console.log('结束')
         setTimeout(() => {
           this.weChat.api('hideLoading')
+          $Message({
+            content: '消息提示',
+            type: 'success'
+          })
         }, 2000)
       })
   },
@@ -37,13 +46,16 @@ new BasePage({
   },
 
   testRequest() {
-    this.weChat.api('showLoading')
     const data = {
       test: '1',
-      test1: '2'
+      test1: '2',
+      isShowLoading: true
     }
     const promise = this.request
-      .get(this.api.API_TEST, data)
+      .get({
+        url: this.api.TEST,
+        data: data
+      })
       .then(res => {
         console.log(res)
       })
@@ -51,15 +63,18 @@ new BasePage({
         console.log(error)
       })
       .finally(() => {
-        this.weChat.api('hideLoading')
+        console.log(promise)
       })
-    console.log(promise)
   },
 
   testDownload() {
-    this.weChat.api('showLoading')
     const promise = this.request
-      .downloadFile(this.api.API_TEST_DOWNLOAD)
+      .downloadFile({
+        url: this.api.TEST_DOWNLOAD,
+        data: {
+          isShowLoading: true
+        }
+      })
       .then(res => {
         console.log(res)
       })
@@ -67,7 +82,7 @@ new BasePage({
         console.log(error)
       })
       .finally(() => {
-        this.weChat.api('hideLoading')
+
       })
     promise.downloadTask.onProgressUpdate(res => {
       console.log('下载进度', res.progress)
@@ -76,16 +91,24 @@ new BasePage({
     })
   },
   testNavigationBar() {
-    this.weChat.api('navigateTo', { url: '../test-module/navigation-bar/navigation-bar' })
+    this.weChat.api('navigateTo', {
+      url: '../test-module/navigation-bar/navigation-bar'
+    })
   },
   testRecycleView() {
-    this.weChat.api('navigateTo', { url: '../test-module/recycle-view/recycle-view' })
+    this.weChat.api('navigateTo', {
+      url: '../test-module/recycle-view/recycle-view'
+    })
   },
   testSlideView() {
-    this.weChat.api('navigateTo', { url: '../test-module/slide-view/slide-view' })
+    this.weChat.api('navigateTo', {
+      url: '../test-module/slide-view/slide-view'
+    })
   },
   testSmCrypto() {
-    this.weChat.api('navigateTo', { url: '../test-module/sm-crypto/sm-crypto' })
+    this.weChat.api('navigateTo', {
+      url: '../test-module/sm-crypto/sm-crypto'
+    })
   },
 
 })

@@ -10,12 +10,13 @@
   ],
   "window": {
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "轻量级框架",
     "navigationBarTextStyle": "white",
     "navigationStyle": "custom"
   },
   "usingComponents": {
-    "c-navigation-bar": "/components/navigation-bar/navigation-bar"
+    "c-navigation-bar": "/components/navigation-bar/navigation-bar",
+    "c-message": "../../components/message/index"
   },
   "sitemapLocation": "sitemap.json"
 }

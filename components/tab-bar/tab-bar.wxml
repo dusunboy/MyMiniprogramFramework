@@ -1,0 +1,9 @@
+<view id="tab-bar" class="flex-row tab-bar">
+  <view class="{{ selected === item.tab ? 'selected' : ' ' }} item flex-column " wx:for="{{list}}" 
+    wx:for-item="item" wx:key="index" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <image class="icon" src="{{selected === item.tab ? item.selectedIconPath : item.iconPath}}"></image>
+    <view class="txt" style="color: {{selected === item.tab ? selectedColor : color}}">
+      {{item.text}}
+    </view>
+  </view>
+</view>

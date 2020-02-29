@@ -3,6 +3,10 @@
 /* margin padding 简写样式 */
 @import './styles/dimen.wxss';
 
+page {
+  background: #ffffff;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -18,4 +22,59 @@
 .flex-column-reverse {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.btn-hover {
+	opacity:.8
+}
+
+.load-more {
+	border-color: #e9eaec #e9eaec #e9eaec #FF7C00!important;
+}
+
+.load-more-txt {
+	color: black!important; 
+}
+
+.pop-title {
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #2A2A2A;
+  font-weight: bold;
+}
+
+.pop-txt {
+  font-family: PingFangSC-Semibold;
+  font-size: 14px;
+  color: #2A2A2A;
+}
+
+.pop-edit {
+  opacity: 0.8;
+  background: #F5F7FA;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #2A2A2A;
+}
+
+.pop-confirm {
+  background: #FF7C00;
+  border-radius: 4px;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 3.43px;
+  text-align: center;
+}
+
+.pop-cancel {
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #939393;
+  letter-spacing: 3.43px;
+  text-align: center;
 }

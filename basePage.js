@@ -1,8 +1,8 @@
 //页面基类
 
 import WeChat from './utils/weChat'
-import Request from './utils/request'
-import Api from './utils/api'
+import Request from './requests/request'
+import Api from './requests/api'
 
 /**
  * 基类
@@ -16,13 +16,14 @@ class BasePage {
     this.initData()
     this.initLifeCircle()
 
-    Page(obj, ...args)
+    Page(this.obj, ...args)
   }
 
   /**
    * 注入初始化數據
    */
   initData() {
+
     //是否显示导航栏
     if (typeof this.obj.data.isShowNav === 'undefined') {
       this.obj.data.isShowNav = true
@@ -33,15 +34,15 @@ class BasePage {
     }
      //导航栏标题名称
     if (typeof this.obj.data.navTitle === 'undefined') {
-      this.obj.data.navTitle = ''
+      this.obj.data.navTitle = '轻量级框架'
     }
     // 导航栏标题颜色
     if (typeof this.obj.data.navTitleColor === 'undefined') {
-      this.obj.data.navTitleColor = 'black'
+      this.obj.data.navTitleColor = 'white'
     }
     // 导航栏背景颜色
     if (typeof this.obj.data.navBgStyle === 'undefined') {
-      this.obj.data.navBgStyle = 'linear-gradient(45deg, #fff, #fff)'
+      this.obj.data.navBgStyle = 'linear-gradient(45deg, #ff891a, #ff891a)'
     }
     // 导航栏是否开启动画
     if (typeof this.obj.data.isNavAnimated === 'undefined') {
@@ -52,11 +53,13 @@ class BasePage {
       this.obj.data.isShowNavBack = true
     }
     if (typeof this.obj.data.navMode === 'undefined') {
-      this.obj.data.navMode = ''
+      this.obj.data.navMode = 'white'
     }
+
     this.obj.weChat = WeChat
     this.obj.request = Request
     this.obj.api = Api
+    
   }
 
   /**
@@ -78,10 +81,9 @@ class BasePage {
   }
 
   /**
-   * 生命周期函数--监听页面加载
-   * @param {*} options
+   * 生命周期函数--监听页面加载   
    */
-  onLoad(options) {}
+  onLoad() {}
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -106,7 +108,10 @@ class BasePage {
   /**
    * 返回上一层页面
    */
-  onBack() {}
+  onBack() {
+    console.log('onBack');
+  }
+
 }
 
 module.exports = BasePage
