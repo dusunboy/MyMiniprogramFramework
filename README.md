@@ -6,7 +6,8 @@
 * Promise化小程序接口
 * Promise化网络请求以及注入拦截器
 * 支持引入NPM包
-* margin,padding样式简写
+* margin样式简写
+* 封装几种常用组件
 
 ## 目录介绍
 
