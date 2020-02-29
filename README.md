@@ -41,10 +41,10 @@
 ``` JS
 // pages/demo/demo.js
 const data = {
-      test: '1',
-      test1: '2',
-      isShowLoading: true
-    }
+  test: '1',
+  test1: '2',
+  isShowLoading: true
+}
 const promise = this.request
   .get({
     url: this.api.TEST,
@@ -112,6 +112,8 @@ const responseError = obj => {
   return obj.data
 }
 
-//*.wxml margin: 2rpx；简写
+//*.wxml margin: 2px；简写
 <view class="m2" ></view>
+//*.wxml padding: 2px；简写
+<view class="p2" ></view>
 ```
