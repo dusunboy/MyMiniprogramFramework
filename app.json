@@ -6,7 +6,8 @@
     "pages/test-module/slide-view/slide-view",
     "pages/test-module/recycle-view/recycle-view",
     "pages/test-module/navigation-bar/navigation-bar",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/test-module/tab-bar/tab-bar"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000",

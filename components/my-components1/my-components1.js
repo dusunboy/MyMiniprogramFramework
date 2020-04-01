@@ -1,5 +1,3 @@
-const app = getApp()
-
 // components/my-components.js
 Component({
 
@@ -31,23 +29,6 @@ Component({
         // 属性值变化时执行                       
       }
     },
-    tabBarHeight: {
-      type: Number,
-      value: 0,
-      observer: function (newVal, oldVal) {
-        // 属性值变化时执行                       
-        let selectorQuery = wx.createSelectorQuery().in(getCurrentPages()[0]);
-        selectorQuery.select('#navigation-bar').boundingClientRect();
-        selectorQuery.exec((res) => {
-          let navBarHeight = res[0].height;
-          let windowHeight = app.globalData.windowHeight
-
-          this.setData({
-            viewHeight: (windowHeight - navBarHeight - newVal) * app.globalData.px2rpx,
-          })
-        });
-      }
-    }
   },
 
   /**
@@ -61,6 +42,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onLoad: function () {}
+    onLoad: function() {
+      
+    }
   }
 })

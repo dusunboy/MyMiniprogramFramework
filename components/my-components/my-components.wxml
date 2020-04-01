@@ -1,4 +1,40 @@
 <!-- components/my-components.wxml -->
-<slot name="before"></slot>
-<text class="txt">components/my-components.wxml</text>
-<slot name="after"></slot>
+<view style="width:100%;display: {{selected == 'my-components' ? 'block;' : 'none;'}}">
+  <scroll-view scroll-y="true" style="height:{{viewHeight}}rpx;">
+    <slot name="before"></slot>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components.wxml</text>
+    <text class="txt">components/my-components22222222222.wxml</text>
+    <text class="txt">{{selected}}</text>
+    <slot name="after"></slot>
+  </scroll-view>
+</view>

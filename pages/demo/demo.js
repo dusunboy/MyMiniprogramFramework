@@ -110,5 +110,9 @@ new BasePage({
       url: '../test-module/sm-crypto/sm-crypto'
     })
   },
-
+  testTabbar() {
+    this.weChat.api('navigateTo', {
+      url: '../test-module/tab-bar/tab-bar'
+    })
+  }
 })

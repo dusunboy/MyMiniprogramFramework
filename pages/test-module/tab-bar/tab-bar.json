@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tab-bar": "../../../components/tab-bar/tab-bar",
+    "c-my-components": "../../../components/my-components/my-components",
+    "c-my-components1": "../../../components/my-components1/my-components1"
+  }
+}

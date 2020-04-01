@@ -15,7 +15,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.5.0",
-	"appid": "wx55acec1a6a5f27d0",
+	"appid": "",
 	"projectname": "MyMiniprogramFramework",
 	"debugOptions": {
 		"hidedInDevtools": []

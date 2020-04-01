@@ -1,3 +1,5 @@
+import WeChat from './utils/weChat'
+
 //app.js
 App({
   onLaunch: function () {
@@ -5,6 +7,12 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+
+    WeChat.api('getSystemInfo').then(res =>{
+      this.globalData.windowWidth = res.windowWidth
+      this.globalData.windowHeight = res.windowHeight
+      this.globalData.px2rpx = 750 / res.windowWidth
+    })
 
     // 登录
     wx.login({

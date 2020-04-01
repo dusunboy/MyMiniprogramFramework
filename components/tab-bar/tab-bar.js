@@ -1,6 +1,3 @@
-import WeChat from '../../utils/weChat'
-
-
 Component({
   lifetimes: {
     created: function () {
@@ -46,25 +43,26 @@ Component({
   methods: {
 
     onLoad() {
-      let selectorQuery = wx.createSelectorQuery().in(this);
-      selectorQuery.select('#tab-bar').boundingClientRect();
-      selectorQuery.exec((res) => {
-        let tabBarHeight = res[0].height;
-        this.setData({
-          tabBarHeight: tabBarHeight
+      setTimeout(() => {
+        let selectorQuery = wx.createSelectorQuery().in(this);
+        selectorQuery.select('#tab-bar').boundingClientRect();
+        selectorQuery.exec((res) => {
+          let tabBarHeight = res[0].height;
+          this.triggerEvent('switchTab', {
+            index: 0,
+            tabBarHeight: tabBarHeight,
+          })
+          this.setData({
+            tabBarHeight: tabBarHeight,
+          })
         })
-      })
+      }, 500);
     },
     switchTab(e) {
       const data = e.currentTarget.dataset
-      const url = data.path
-      // wx.switchTab({url})
-      this.setData({
-        selected: this.data.list[data.index].tab
-      })
       this.triggerEvent('switchTab', {
-        tab: this.data.list[data.index].tab,
         index: data.index,
+        tabBarHeight: this.data.tabBarHeight,
       })
     }
   }

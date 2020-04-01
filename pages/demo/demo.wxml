@@ -8,8 +8,9 @@
   <button bindtap="testRecycleView">测试RecycleView组件</button>
   <button bindtap="testSlideView">测试SlideView</button>
   <button bindtap="testSmCrypto">测试sm-crypto加密解密</button>
-  <my-components>
+  <button bindtap="testTabbar">测试自定义Tabbar</button>
+  <my-components1 selected="my-components1">
     <view slot="before">这里是插入到组件slot name="before"中的内容</view>
     <view slot="after">这里是插入到组件slot name="after"中的内容</view>
-  </my-components>
+  </my-components1>
 </view>

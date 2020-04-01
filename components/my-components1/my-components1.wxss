@@ -1,0 +1,4 @@
+/* components/my-components.wxss */
+.txt {
+  color: red;
+}

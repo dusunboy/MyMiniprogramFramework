@@ -1,0 +1,7 @@
+<!-- components/my-components.wxml -->
+<view style="width:100%;display: {{selected == 'my-components1' ? 'block;' : 'none;'}}">
+  <slot name="before"></slot>
+  <text class="txt">components/my-components1111111111.wxml</text>
+  <text class="txt">{{selected}}</text>
+  <slot name="after"></slot>
+</view>

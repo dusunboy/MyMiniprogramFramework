@@ -19,7 +19,8 @@ var config = {
   //站点URL
   SITE_URL: SITE_URL,
   //每页记录数
-  pageSize: 5 
+  pageSize: 5 ,
+  baseImageUrl: '../../image' ,
 };
 
 module.exports = config
